@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:colorPrimaryDark">#2B85D3</item>
+
+        <item name="android:colorAccent">#2B85D3</item>
+
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Theme.Navigator" parent="android:Theme.Holo">
+        <item name="android:homeAsUpIndicator">@drawable/nav_bars</item>
+    </style>
+
+
+</resources>

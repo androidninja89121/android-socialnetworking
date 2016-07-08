@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Netzwierk</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splashscreen">Splashscreen</string>
+    <string name="Login_color_button_hash">78C8B4</string>
+    <string name="title_activity_main">Doheem</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_camera">Foto maachen</string>
+
+    <string name="facebook_app_id">1496868033860464</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_comment">CommentActivity</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_profile_adapter">ProfileAdapter</string>
+    <string name="title_activity_profile_edit">ProfileEditActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_find_friends">FindFriendsActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+</resources>

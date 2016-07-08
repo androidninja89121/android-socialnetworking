@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#CDD5DC"
+    android:fillViewport="true"
+    android:windowSoftInputMode="stateHidden">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/SaveButton"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="#60AEEE"
+            android:text="Save"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#FFF"
+            android:layout_marginTop="0dp"/>
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/HeaderPhoto"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:gravity="center|left"
+        android:background="#FFF"
+        android:text="Header Photo"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#000"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="70dp"/>
+
+        <com.parse.ParseImageView
+            android:id="@+id/Title"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="7dp"
+            android:paddingBottom="0dp"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="10dp" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/ProfilePhoto"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:gravity="center|left"
+        android:background="#FFF"
+        android:text="Profile Photo"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#000"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="70dp"/>
+
+
+            <com.parse.ParseImageView
+                android:id="@+id/Thumbnail"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentLeft="true"
+                android:paddingTop="7dp"
+                android:paddingBottom="0dp"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/Numm"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:gravity="center|left"
+        android:background="#FFF"
+        android:text="Name"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#000"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/EditUsername"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="100dp"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:textColor="#2B85D3"
+                android:maxLines="1"
+                android:text="MyName"
+                android:background="@null"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/Mention"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:gravity="center|left"
+        android:background="#FFF"
+        android:text="Mention"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#000"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/EditMention"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="100dp"
+                android:fontFamily="sans-serif-light"
+                android:maxLines="1"
+                android:textColor="#2B85D3"
+                android:textSize="16sp"
+                android:text="yo mama"
+                android:background="@null"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/Bio"
+        android:layout_width="360dp"
+        android:layout_height="90dp"
+        android:gravity="center|top|left"
+        android:background="#FFF"
+        android:text="Bio"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#000"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"/>
+
+            <EditText
+                android:id="@+id/EditBio"
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:gravity="center|top|left"
+                android:layout_marginLeft="100dp"
+                android:text="Ech hu kee bock mei android apps ze maachen, well aaner informatik fiiil mei interessant ass :Py"
+                android:textSize="16sp"
+                android:textColor="#2B85D3"
+                android:maxLines="3"
+                android:background="@null"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginTop="55dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

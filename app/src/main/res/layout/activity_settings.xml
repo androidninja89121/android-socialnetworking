@@ -1,0 +1,67 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    tools:context="lux.socialnetwork.SettingsActivity">
+
+    <TextView
+        android:id="@+id/Terms"
+        android:text="Terms of Service"
+        android:layout_width="380dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:background="#FFF"
+        android:fontFamily="sans-serif-light"
+        android:layout_above="@+id/Contact"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:id="@+id/Contact"
+        android:text="Contact us"
+        android:layout_width="380dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:background="#FFF"
+        android:fontFamily="sans-serif-light"
+        android:layout_above="@+id/DeleteAccount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="80dp" />
+
+    <TextView
+        android:id="@+id/DeleteAccount"
+        android:text="Delete my account"
+        android:layout_width="380dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textColor="#ff0000"
+        android:background="#FFF"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginBottom="66dp"
+        android:layout_above="@+id/Version"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/Version"
+        android:text="Social Network 1.0"
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="57dp"
+        android:gravity="center"
+        android:textColor="#2B85D3"
+        android:textSize="12sp"
+        android:background="#FFF"
+        android:fontFamily="sans-serif-light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

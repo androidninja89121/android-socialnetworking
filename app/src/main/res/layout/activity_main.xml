@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pull"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp">
+
+
+
+    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        android:id="@+id/swipyrefreshlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:direction="top">
+
+
+    <ListView android:id="@+id/ListView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:divider="#FFF"
+        android:background="#FFF"
+        android:listSelector="@android:color/transparent"
+        />
+
+    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/right_labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_addButtonColorNormal="#2B85D3"
+        fab:fab_addButtonColorPressed="#355088"
+        fab:fab_addButtonPlusIconColor="#FFF"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        fab:fab_labelsPosition="left"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#2B85D3"
+            fab:fab_size="mini"
+            fab:fab_title="Camera"
+            fab:fab_colorPressed="#355088"
+            android:src="@drawable/camera"
+            android:paddingBottom="17dp"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#2B85D3"
+            fab:fab_size="mini"
+            fab:fab_title="Choose frmo gallery"
+            fab:fab_colorPressed="#355088"
+            android:src="@drawable/gallery"
+            android:paddingBottom="17dp"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipyrefreshlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:direction="top">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFF">
+
+
+
+
+
+
+    <LinearLayout android:id="@+id/Top"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dip">
+
+
+        <com.parse.ParseImageView
+            android:id="@+id/user_thumbnail"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="5dp"/>
+
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/user_thumbnail"
+            android:paddingLeft="6dp"
+            android:textColor="#000000"
+            android:paddingRight="50dp"
+            android:paddingTop="9dp"
+            android:textSize="16sp"
+            android:fontFamily= "sans-serif-normal" />
+
+        <!--  <TextView
+          android:id="@+id/date"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_toRightOf="@id/user_thumbnail"
+          android:paddingLeft="6dp"
+          android:paddingRight="50dp"
+          android:paddingTop="35dp"
+          android:text ="TestTime"
+          android:textSize="@dimen/font_size_date"
+          android:textStyle="bold"
+          android:fontFamily= "sans-serif-light" /> -->
+
+    </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/Photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Top">
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible"/>
+
+            <com.parse.ParseImageView
+                android:id="@+id/image_detail_view"
+                android:layout_width="385dp"
+                android:layout_height="385dp"
+                android:scaleType="centerCrop"
+                android:clickable="false"
+                android:cropToPadding="false" />
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/belowPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/Photo"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:id="@+id/LayoutLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imgLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dip"
+                    android:src="@drawable/buttonlike" />
+
+                <TextView
+                    android:id="@+id/like_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="0dp"
+                    android:textColor="#000000"
+                    android:paddingRight="0dp"
+                    android:textSize="12sp"
+                    android:fontFamily= "sans-serif-light"
+                    android:layout_centerHorizontal="true"/>
+
+
+            </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:orientation="vertical"
+        android:layout_weight="0.99">
+
+            <ListView
+        android:id="@+id/comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>
+</com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+

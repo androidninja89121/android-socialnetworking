@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/field"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:layout_below="@id/comment_list">
+
+    <EditText
+        android:id="@+id/new_comment_input"
+        android:layout_width="190dp"
+        android:inputType="textCapSentences|textMultiLine"
+        android:fontFamily="sans-serif-light"
+        android:hint="Make the first comment"
+        android:background="#FFFF"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_height="60dp"
+        android:layout_gravity="center|bottom"
+        android:layout_weight="1.01" />
+
+    <ImageButton
+        android:id="@+id/new_comment_send"
+        android:paddingTop="0dp"
+        android:layout_width="55dp"
+        android:background="#00000000"
+        android:layout_height="60dp"
+        android:src="@drawable/send"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0dp" />
+</LinearLayout>

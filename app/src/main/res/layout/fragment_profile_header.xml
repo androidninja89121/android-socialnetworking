@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:orientation="vertical">
+
+    <com.parse.ParseImageView
+        android:id="@+id/TitleImage"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:adjustViewBounds="true"
+        android:paddingLeft="0dip"
+        android:paddingRight="0dip"
+        android:paddingTop="0dp"
+        android:background="#2770B0"/>
+
+
+    <RelativeLayout android:id="@+id/Top"
+        android:layout_width="360dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="0dp"
+        android:background="#FFFFFF"
+        android:layout_gravity="center_horizontal|bottom"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dip"
+        android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/Displayname_user"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="55dp"
+        android:paddingLeft="20dp"
+        android:background="#FFFFFF"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#000000"/>
+
+
+        <TextView
+            android:id="@+id/Mention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingTop="0dp"
+            android:paddingLeft="20dp"
+            android:textSize="13sp"
+            android:layout_below="@+id/Displayname_user"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#848484"/>
+
+    <TextView
+        android:id="@+id/Info_text"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textSize="14sp"
+        android:paddingTop="5dp"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/Mention"
+        android:textColor="#000" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/Info_text"
+    android:paddingTop="15dp">
+
+    <TextView
+        android:id="@+id/Photo_number"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/Follower_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/Following_number"
+        android:layout_width="wrap_content"
+        android:paddingLeft="30dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+        <Button
+            android:id="@+id/EditButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:text="Edit"
+            android:textColor="#FFF"
+            android:background="@drawable/rounded_corners_edit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/Displayname_user"
+            android:layout_toEndOf="@+id/Displayname_user" />
+
+        <Button
+            android:id="@+id/FollowButton"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Follow"
+            android:textColor="#000"
+            android:background="@drawable/rounded_corners_followen"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/Displayname_user"
+            android:layout_toEndOf="@+id/Displayname_user" />
+
+
+    </RelativeLayout>
+
+
+    <com.parse.ParseImageView
+        android:id="@+id/Thumbnail_Back"
+        android:layout_width="220px"
+        android:layout_height="220px"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/rounded_corners_profile"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="left|center_vertical" />
+
+    <com.parse.ParseImageView
+        android:id="@+id/user_thumbnail"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="left|center_vertical"
+        android:foreground="@drawable/foreground_thumbnail_medium" />
+
+
+    <com.parse.ParseImageView
+        android:id="@+id/Thumbnail_Front"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/circle"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="left|center_vertical" />
+
+
+</FrameLayout>
+
+
+</AbsoluteLayout>

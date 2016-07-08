@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.parse.ParseImageView
+        android:id="@+id/user_thumbnail"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"/>
+
+
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/user_thumbnail"
+        android:textColor="#000000"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:fontFamily= "sans-serif-normal" />
+
+
+    <TextView
+        android:id="@+id/photos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/user_thumbnail"
+        android:textColor="#BDBDBD"
+        android:layout_marginLeft="5dp"
+        android:text="0 Photos"
+        android:layout_marginTop="28dp"
+        android:textSize="10sp"
+        android:fontFamily= "sans-serif-normal" />
+
+
+
+    <Button
+        android:id="@+id/FollowButton"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:adjustViewBounds="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="0dip"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Follow"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="#000"
+        android:background="@drawable/rounded_corners_followen"
+        style="?android:attr/borderlessButtonStyle"/>
+
+</RelativeLayout>
